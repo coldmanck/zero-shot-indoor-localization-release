@@ -91,5 +91,8 @@ Refer to `compute-loc_vec.py` for computing Map2Vec embeddings for both `icube` 
 
 Note that currently the `adjacency_matrix.npy` file for `wcp` dataset is missed; you have to generate it yourself from `loc_vec.npy`. However, only for verifying/evaluation purpose, you may skip this step to use the `loc_vec_trained_394.npy` directly.
 
+## License
+Our code & datasets are released under the MIT license. See LICENSE for additional details.
+
 ## Enquiry
 Feel free to drop an email to mengjiun.chiou@u.nus.edu
