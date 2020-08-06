@@ -1,6 +1,5 @@
-# zero-shot-indoor-localization
-Official code & model release of the paper **Zero-Shot Multi-View Indoor Localization via Graph Location Networks** (accepted at ACM MM 2020). This repo also includes two datasets (ICUBE & WCP) used in the paper and useful code snippets for reading datasets.
-
+# Zero-Shot Indoor Localization
+The official evaluation code of the paper **Zero-Shot Multi-View Indoor Localization via Graph Location Networks** (accepted at ACM MM 2020). This repo also includes two datasets (ICUBE & WCP) used in the paper and useful code snippets for reading datasets.
 
 <img src="figs/intro.jpg" width="320"> <img src="figs/zero-shot-indoor-localization.jpg" width="800">
 
