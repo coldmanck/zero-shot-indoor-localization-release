@@ -47,3 +47,15 @@ class IndoorDataset(Dataset):
         label = torch.cat(all_label)
 
         return data, label
+
+
+class MapDataset(Dataset):
+    def __init__(self, args):
+        with open('data/' + args.dataset + '/loc_vec.npy', 'rb') as f:
+            self.loc_vec = np.load(f)[1:, :]
+    
+    def __len__(self):
+        return len(self.loc_vec)
+    
+    def __getitem__(self, idx):
+        return torch.FloatTensor((self.loc_vec[idx])), torch.LongTensor((idx,))

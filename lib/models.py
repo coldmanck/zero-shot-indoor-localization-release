@@ -76,3 +76,21 @@ class LocationGraphNet(nn.Module):
             x = torch.cat([x[i].repeat(4, 1) for i in range(data.num_graphs)])
             
         return x if self.zero_shot else F.log_softmax(x, dim=1)
+
+
+class MapGraphNet(nn.Module):
+    def __init__(self, args):
+        super().__init__()
+        output_dim = 214 if args.dataset == 'icube' else 394
+
+        self.conv1 = GCNConv(2, output_dim)
+        self.bn1 = nn.BatchNorm1d(output_dim)
+        self.fc1 = nn.Linear(output_dim, output_dim)
+        
+    def forward(self, x, edge_index, dist_max=None, dist_argmax=None):
+        x = F.relu(self.conv1(x, edge_index))
+        x = self.bn1(x)
+        x = F.dropout(x, training=self.training)
+        x = self.fc1(x)
+        
+        return F.log_softmax(x, dim=1), x
