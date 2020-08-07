@@ -81,6 +81,7 @@ if __name__ == '__main__':
 
     train_losses = []
     train_accs = []
+    best_epoch = 0
     for epoch in range(epochs):
         print(f'Training epoch {epoch}...')
         loss = train()
@@ -96,6 +97,7 @@ if __name__ == '__main__':
 
             if train_acc > best_train_acc:
                 best_train_acc = train_acc
+                best_epoch = epoch
                 
                 save_addr = f'checkpoints_{args.dataset}/loc_vec-gcn-best_model-epoch{epoch}.pth'
 
@@ -110,8 +112,7 @@ if __name__ == '__main__':
     # extract Map2Vec embedding
     ckpt = torch.load(save_addr)
     print(ckpt['best_train_accuracy'])
-
-    model.load_state_dict(torch.load('checkpoints_wcp/loc_vec-gcn-best_model-epoch8761.pth')['state_dict'])
+    model.load_state_dict(torch.load(f'checkpoints_{args.dataset}/loc_vec-gcn-best_model-epoch{best_epoch}.pth')['state_dict'])
 
     model.eval()
     with torch.no_grad():
