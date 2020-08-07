@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ```
 
 ## Checkpoints
-Download the checkpoints [here](https://drive.google.com/drive/folders/18FOWTYAg502qc92UdTjNPKC59WngsP1R?usp=sharing) and put them into the `checkpoints` folder follow the following predefined structure. You can also run `./download_checkpoints.sh` to download them automatically (while you need to install `gdown` via `pip install gdown` first).
+Download the trained models [here](https://drive.google.com/drive/folders/18FOWTYAg502qc92UdTjNPKC59WngsP1R?usp=sharing) and put them into the `checkpoints` folder follow the following predefined structure. You can also run `./download_checkpoints.sh` to download them automatically (while you need to install `gdown` via `pip install gdown` first).
 
 ```
 checkpoints
