@@ -64,7 +64,27 @@ pip install -r requirements.txt
 ```
 
 ## Checkpoints
-Download the checkpoints [here](https://drive.google.com/drive/folders/18FOWTYAg502qc92UdTjNPKC59WngsP1R?usp=sharing) and put them into the `checkpoints` folder follow the predefined structure. You can also run `./download_checkpoints.sh` to download them automatically (while you need to install `gdown` via `pip install gdown` first).
+Download the checkpoints [here](https://drive.google.com/drive/folders/18FOWTYAg502qc92UdTjNPKC59WngsP1R?usp=sharing) and put them into the `checkpoints` folder follow the following predefined structure. You can also run `./download_checkpoints.sh` to download them automatically (while you need to install `gdown` via `pip install gdown` first).
+
+```
+checkpoints
+|-icube
+  |-standard
+    |-resnet152-best_model-gln.pth
+    |-resnet152-best_model-gln_att.pth
+  |-zero-shot
+    |-resnet152-best_model-baseline.pth
+    |-resnet152-best_model-gln.pth
+    |-resnet152-best_model-gln_att.pth
+|-wcp
+  |-standard
+    |-resnet152-best_model-gln.pth
+    |-resnet152-best_model-gln_att.pth
+  |-zero-shot
+    |-resnet152-best_model-baseline.pth
+    |-resnet152-best_model-gln.pth
+    |-resnet152-best_model-gln_att.pth
+```
 
 ## Evaluation
 Default dataset is `icube`. You may change to `wcp` as needed. Note that the code assumes using 1 GPU & will take up around ~2GB memory. To change to `cpu` only, make some changes to the codes.
