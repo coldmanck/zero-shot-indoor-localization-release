@@ -1,15 +1,17 @@
 # Zero-Shot Indoor Localization
-The official evaluation code of the paper **Zero-Shot Multi-View Indoor Localization via Graph Location Networks** (accepted at ACM MM 2020). This repo also includes two datasets (ICUBE & WCP) used in the paper and useful code snippets for reading datasets.
+The official evaluation code of the paper **[Zero-Shot Multi-View Indoor Localization via Graph Location Networks](https://arxiv.org/abs/2008.02492)** which has been accepted at ACM MM 2020. This repo also includes two datasets (ICUBE & WCP) used in the paper and useful code snippets for reading datasets.
 
 <img src="figs/intro.jpg" width="320"> <img src="figs/zero-shot-indoor-localization.jpg" width="800">
 
 Please cite our paper if you use our code/datasets or feel inspired by our work :)
 ```
-@inproceedings{chiou2020zero,
-  title={Zero-Shot Multi-View Indoor Localization via Graph Location Networks},
-  author={Chiou, Meng-Jiun and Liu, Zhenguang and Yin, Yifang and Liu, Anan and Zimmermann, Roger},
-  booktitle={Proceedings of the 28th ACM International Conference on Multimedia},
-  year={2020}
+@misc{chiou2020zeroshot,
+    title={Zero-Shot Multi-View Indoor Localization via Graph Location Networks},
+    author={Meng-Jiun Chiou and Zhenguang Liu and Yifang Yin and Anan Liu and Roger Zimmermann},
+    year={2020},
+    eprint={2008.02492},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
 ```
 
@@ -90,6 +92,9 @@ python eval-zs_gln.py --network gat --dataset icube --ckpt checkpoints/icube/zer
 Refer to `compute-loc_vec.py` for computing Map2Vec embeddings for both `icube` and `wcp` datasets. 
 
 Note that currently the `adjacency_matrix.npy` file for `wcp` dataset is missed; you have to generate it yourself from `loc_vec.npy`. However, only for verifying/evaluation purpose, you may skip this step to use the `loc_vec_trained_394.npy` directly.
+
+## License
+Our code & datasets are released under the MIT license. See [LICENSE](LICENSE) for additional details.
 
 ## Enquiry
 Feel free to drop an email to mengjiun.chiou@u.nus.edu
