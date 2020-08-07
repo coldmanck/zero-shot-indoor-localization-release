@@ -26,11 +26,6 @@ Especially for ICUBE dataset, you might also want to cite the following paper:
 }
 ```
 
-## To-Dos
-- [ ] Zip datasets into a single file for easier downloading
-- [ ] Generate missing adjacency_matrix.npy for the WCP dataset
-- [ ] Extension experiments on larger interval (e.g. 2-, 3- meter) for zero-shot setting
-
 ## Datasets
 ### Images
 - [ICUBE Dataset](https://drive.google.com/drive/folders/1T0Dq8xuwL9myzVu_fZ4AylC2BJNRBNrg?usp=sharing): collected at the ICUBE building (21 Heng Mui Keng Terrace, Singapore 119613) at NUS.
