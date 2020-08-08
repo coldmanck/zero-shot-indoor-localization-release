@@ -3,7 +3,7 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 from torchvision import transforms
 
-from torch_geometric.nn import GCNConv, GATConv, SAGEConv
+from torch_geometric.nn import GCNConv, GATConv
 
 import os.path as osp
 import pickle, os

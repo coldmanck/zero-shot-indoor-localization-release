@@ -5,7 +5,7 @@ import torchvision
 
 import torch_geometric
 from torch_geometric.data import DataLoader
-from torch_geometric.nn import GCNConv, GATConv, SAGEConv
+from torch_geometric.nn import GCNConv, GATConv
 
 class LocationNet(nn.Module):
     def __init__(self, args, zero_shot=False):
