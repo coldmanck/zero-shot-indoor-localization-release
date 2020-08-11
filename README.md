@@ -5,13 +5,11 @@ The official evaluation code of the paper **[Zero-Shot Multi-View Indoor Localiz
 
 Please cite our paper if you use our code/datasets or feel inspired by our work :)
 ```
-@misc{chiou2020zeroshot,
-    title={Zero-Shot Multi-View Indoor Localization via Graph Location Networks},
-    author={Meng-Jiun Chiou and Zhenguang Liu and Yifang Yin and Anan Liu and Roger Zimmermann},
-    year={2020},
-    eprint={2008.02492},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@article{chiou2020zero,
+  title={Zero-Shot Multi-View Indoor Localization via Graph Location Networks},
+  author={Chiou, Meng-Jiun and Liu, Zhenguang and Yin, Yifang and Liu, Anan and Zimmermann, Roger},
+  journal={arXiv preprint arXiv:2008.02492},
+  year={2020}
 }
 ```
 
