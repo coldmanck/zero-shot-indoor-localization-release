@@ -36,11 +36,12 @@ Annotations are provided in this repository. We provide description for each fil
 
 - `{dataset}_path.txt`      -> Each line represents a "path" or "road", where for each line there are three numbers: (1) road ID (2) start location ID (3) end location ID
 - `loc_vec.npy`             -> A 2D array in size of (n_location, 2) where the line *i* is the coordinate of location *i* in increasing order (the first line is location 1). Generated from `{dataset}_path.txt`.
-- `adjacency_matrix.npy`    -> (*for zero-shot use*) Adjacency matrix of the locations. A 2D array in size of (n_location + 1, n_location + 1). The first row and column should be omitted before use. Generated from `loc_vec.npy`. Note that currently the `adjacency_matrix.npy` file for `wcp` dataset is missed; you have to generate it yourself.
-- `loc_vec_trained_{214,394}.npy` -> (*for zero-shot use*) Trained node features with the proposed Map2Vec using `compute-loc_vec.py`.
-- `nonzl_loc_to_dict.pkl` -> (*for zero-shot use*) A dictionary that maps dataset's **seen** location IDs into training class IDs.
-- `all_loc_to_dict.pkl` -> (*for zero-shot use*) A dictionary that maps all dataset's **seen & unseen** location IDs into all inference class IDs.
+- `adjacency_matrix.npy`    -> (*for zero-shot use*) Adjacency matrix of the locations. A 2D array in size of (n_location + 1, n_location + 1). The first row and column should be omitted before use. Generated from `loc_vec.npy`. Note that currently the `adjacency_matrix.npy` file for `wcp` dataset is missed; you have to generate it yourself according to `wcp_path.txt`.
+- `nonzl_loc_to_dict.pkl` -> (*for zero-shot use*) A dictionary that maps dataset's **seen** location IDs into all (training) class IDs.
+- `all_loc_to_dict.pkl` -> (*for zero-shot use*) A dictionary that maps all dataset's **seen & unseen** location IDs into all (training & validation) class IDs.
 
+### Pre-trained Feature
+- `loc_vec_trained_{214,394}.npy` -> (*for zero-shot use*) Trained node features with the proposed Map2Vec using `compute-loc_vec.py`.
 
 ## Installation
 
