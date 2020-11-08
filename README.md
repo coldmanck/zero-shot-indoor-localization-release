@@ -52,8 +52,9 @@ Annotations are provided in this repository. We provide description for each fil
 ```
 conda craete -n zsgln python=3.6 scipy numpy
 conda activate zsgln
+# Go to https://pytorch.org/get-started/previous-versions/ to install PyTorch with a compatiable gpu version
+# Then install other requirements as follows
 pip install -r requirements.txt
-# And install PyTorch following official steps
 ```
 
 ## Checkpoints
