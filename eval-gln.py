@@ -160,7 +160,7 @@ if __name__ == '__main__':
                                         transforms.Normalize([0.485, 0.456, 0.406],
                                                             [0.229, 0.224, 0.225])])
     if args.dataset == 'icube':
-        val_dataset = IndoorDataset(data_dir=osp.join(path, 'test_orig'), transform=test_transform)
+        val_dataset = IndoorDataset(data_dir=osp.join(path, 'icube_test_rearange'), transform=test_transform)
     else:
         val_dataset = IndoorDataset(data_dir=osp.join(path, 'test_rearange_20'), transform=test_transform)
 
