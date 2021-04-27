@@ -50,7 +50,7 @@ Annotations are provided in this repository. We provide description for each fil
 - Torchvision (to be installed along with PyTorch)
 - Other packages in `requirements.txt` (including torch-geometric==1.3.0)
 ```
-conda craete -n zsgln python=3.6 scipy numpy
+conda create -n zsgln python=3.6 scipy numpy
 conda activate zsgln
 # Go to https://pytorch.org/get-started/previous-versions/ to install PyTorch with a compatiable gpu version
 # Then install other requirements as follows
