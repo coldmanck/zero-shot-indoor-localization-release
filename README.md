@@ -34,8 +34,8 @@ Especially for ICUBE dataset, you might also want to cite the following paper:
 ## Datasets
 ### Images
 Note that for both datasets, the name of each image follows the naming of `{xx}_000{yy}.jpg` where `xx` is the location ID and `yy` in {`01`,`02`,...,`12`} means different views of the location and `01-04`, `05-08` and `09-12` are sets of four views of the location.
-- [ICUBE Dataset](https://drive.google.com/drive/folders/1T0Dq8xuwL9myzVu_fZ4AylC2BJNRBNrg?usp=sharing): collected at the ICUBE building (21 Heng Mui Keng Terrace, Singapore 119613) at NUS. Put the image data under `data/icube/`. 
-- [West Coast Plaza (WCP) Dataset](https://drive.google.com/drive/folders/1hFMAMnJPoUdnRVsCn6SQ6M5deC9h2wMj?usp=sharing): collected at the WCP shopping mall (154 West Coast Rd, Singapore 127371). Put the image data under `data/wcp/`.
+- [ICUBE Dataset](https://drive.google.com/drive/folders/1xn5kIzMZWoIH1FOT8_3TYKamE8xaTRQd?usp=sharing): collected at the ICUBE building (21 Heng Mui Keng Terrace, Singapore 119613) at NUS. Put the image data under `data/icube/`. 
+- [West Coast Plaza (WCP) Dataset](https://drive.google.com/drive/folders/15S_i0pEmks5ZbokChT_JISNIw7Ljt_ui?usp=sharing): collected at the WCP shopping mall (154 West Coast Rd, Singapore 127371). Put the image data under `data/wcp/`.
 
 ### Annotations
 Annotations are provided in this repository. We provide description for each file as follows:
